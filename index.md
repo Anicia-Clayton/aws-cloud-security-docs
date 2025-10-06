@@ -3,12 +3,47 @@ layout: default
 title: AWS Cloud Security Portfolio
 ---
 
+<!-- Hero (Cayman keeps its banner; this adds a brief intro) -->
 # AWS Cloud Security Portfolio
 
-This portfolio showcases **secure-by-design AWS architectures** across three domains:
-- 🧴 **Consumer Health/Wellness** — Secure ingredient lookup API
-- 🏫 **Education (Homeschool Platform)** — Identity & privacy for global learners
-- 🏥 **Medicine (Hospital Occupancy API)** — HIPAA-aware access with continuous compliance
+This portfolio showcases **secure-by-design AWS architectures** across three domains.
+
+<!-- Card Grid (restores the original visual) -->
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px; padding:24px; max-width:1100px; margin: 0 auto 24px auto;">
+  <div style="background:#fff; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,.08); padding:18px; border:1px solid #eaeef2;">
+    <div style="font-size:12px; margin-bottom:6px;">
+      <span style='background:#eaeef2;border-radius:999px;padding:2px 6px;'>Consumer</span>
+      <span style='background:#eaeef2;border-radius:999px;padding:2px 6px;'>WAF</span>
+      <span style='background:#eaeef2;border-radius:999px;padding:2px 6px;'>tfsec</span>
+    </div>
+    <h3 style="margin:6px 0;">Consumer Wellness API</h3>
+    <p>Serverless API with WAF protection and Config compliance.</p>
+    <p><b>Stack:</b> API GW · Lambda · DynamoDB (KMS)</p>
+    <p><a href="projects/consumer-secure-ingredient-api/">View project →</a></p>
+  </div>
+  <div style="background:#fff; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,.08); padding:18px; border:1px solid #eaeef2;">
+    <div style="font-size:12px; margin-bottom:6px;">
+      <span style='background:#eaeef2;border-radius:999px;padding:2px 6px;'>Education</span>
+      <span style='background:#eaeef2;border-radius:999px;padding:2px 6px;'>Cognito</span>
+      <span style='background:#eaeef2;border-radius:999px;padding:2px 6px;'>JWT</span>
+    </div>
+    <h3 style="margin:6px 0;">Education Homeschool API</h3>
+    <p>Role-based access for parents, students, tutors with Cognito.</p>
+    <p><b>Stack:</b> API GW · Lambda · DynamoDB (KMS)</p>
+    <p><a href="projects/education-secure-homeschool-api/">View project →</a></p>
+  </div>
+  <div style="background:#fff; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,.08); padding:18px; border:1px solid #eaeef2;">
+    <div style="font-size:12px; margin-bottom:6px;">
+      <span style='background:#eaeef2;border-radius:999px;padding:2px 6px;'>Medicine</span>
+      <span style='background:#eaeef2;border-radius:999px;padding:2px 6px;'>MFA</span>
+      <span style='background:#eaeef2;border-radius:999px;padding:2px 6px;'>Config</span>
+    </div>
+    <h3 style="margin:6px 0;">Hospital Occupancy API</h3>
+    <p>HIPAA-aware access with MFA and continuous compliance.</p>
+    <p><b>Stack:</b> API GW · Lambda · DynamoDB (KMS)</p>
+    <p><a href="projects/medicine-secure-hospital-api/">View project →</a></p>
+  </div>
+</div>
 
 ## 🔐 Security Layers
 
@@ -29,6 +64,6 @@ This portfolio showcases **secure-by-design AWS architectures** across three dom
 - **GitHub Actions workflow gating** (block merges on critical tfsec findings)
 
 ## 📂 Projects
-- [🧴 Consumer Health/Wellness × Cloud Security](projects/consumer-secure-ingredient-api/_index.md)
-- [🏫 Education × Cloud Security (Homeschool Platform)](projects/education-secure-homeschool-api/_index.md)
-- [🏥 Medicine × Cloud Security (Hospital Occupancy API)](projects/medicine-secure-hospital-api/_index.md)
+- [🧴 Consumer Health/Wellness × Cloud Security](projects/consumer-secure-ingredient-api/)
+- [🏫 Education × Cloud Security (Homeschool Platform)](projects/education-secure-homeschool-api/)
+- [🏥 Medicine × Cloud Security (Hospital Occupancy API)](projects/medicine-secure-hospital-api/)
